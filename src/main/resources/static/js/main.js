@@ -1,564 +1,737 @@
-(function ($) {
-    "use strict";
-    
-    /*--
-    currency active
-    -----------------------------------*/
-    if ($('.currency-wrap').length) {
-        var $body2 = $('body'),
-            $urdanDropdown2 = $('.currency-wrap'),
-            $urdanDropdownMenu2 = $urdanDropdown2.find('.currency-dropdown');
-        $urdanDropdown2.on('click', '.currency-active', function(e) {
-            e.preventDefault();
-            var $this = $(this);
-            if (!$this.parent().hasClass('show')) {
-                $this.siblings('.currency-dropdown').addClass('show').slideDown().parent().addClass('show');
-            } else {
-                $this.siblings('.currency-dropdown').removeClass('show').slideUp().parent().removeClass('show');
-            }
-        });
-        /*Close When Click Outside*/
-        $body2.on('click', function(e) {
-            var $target = e.target;
-            if (!$($target).is('.currency-wrap') && !$($target).parents().is('.currency-wrap') && $urdanDropdown2.hasClass('show')) {
-                $urdanDropdown2.removeClass('show');
-                $urdanDropdownMenu2.removeClass('show').slideUp();
-            }
-        });
-    }
-    
-    /*--
-    language active
-    -----------------------------------*/
-    if ($('.language-wrap').length) {
-        var $body3 = $('body'),
-            $urdanDropdown3 = $('.language-wrap'),
-            $urdanDropdownMenu3 = $urdanDropdown3.find('.language-dropdown');
-        $urdanDropdown3.on('click', '.language-active', function(e) {
-            e.preventDefault();
-            var $this = $(this);
-            if (!$this.parent().hasClass('show')) {
-                $this.siblings('.language-dropdown').addClass('show').slideDown().parent().addClass('show');
-            } else {
-                $this.siblings('.language-dropdown').removeClass('show').slideUp().parent().removeClass('show');
-            }
-        });
-        /*Close When Click Outside*/
-        $body3.on('click', function(e) {
-            var $target = e.target;
-            if (!$($target).is('.language-wrap') && !$($target).parents().is('.language-wrap') && $urdanDropdown3.hasClass('show')) {
-                $urdanDropdown3.removeClass('show');
-                $urdanDropdownMenu3.removeClass('show').slideUp();
-            }
-        });
-    }
-    
-    // Hero slider active
-    var sliderActive = new Swiper('.slider-active', {
-        loop: true,
-        speed: 750,
-        effect: 'fade',
-        slidesPerView: 1,
-        navigation: {
-            nextEl: '.home-slider-next , .home-slider-next2 , .home-slider-next3',
-            prevEl: '.home-slider-prev , .home-slider-prev2 , .home-slider-prev3',
-        }
-    });
-    
-    /*------ Timer active ----*/
-    $('#timer-1-active').syotimer({
-        year: 2021,
-        month: 12,
-        day: 31,
-        hour: 23,
-        minute: 59,
-        layout: 'hms',
-        periodic: false,
-        periodUnit: 'd'
-    });
-    
-    // Product slider active 1
-    var sliderActiveTwo = new Swiper('.product-slider-active-1', {
-        loop: true,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.product-next-1',
-            prevEl: '.product-prev-1',
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1
-            },
-            576: {
-                slidesPerView: 2
-            },
-            768: {
-                slidesPerView: 3
-            },
-            992: {
-                slidesPerView: 3
-            },
-            1200: {
-                slidesPerView: 4
-            }
-        },
-    });
-    
-    // Brand logo active
-    var sliderActiveThree = new Swiper('.brand-logo-active', {
-        loop: true,
-        spaceBetween: 20,
-        breakpoints: {
-            320: {
-                slidesPerView: 2
-            },
-            576: {
-                slidesPerView: 3
-            },
-            768: {
-                slidesPerView: 4
-            },
-            992: {
-                slidesPerView: 5
-            }
-        },
-    });
-    
-    
-    // Category slider active
-    var sliderActiveFour = new Swiper('.category-slider-active', {
-        loop: true,
-        spaceBetween: 43,
-        breakpoints: {
-            320: {
-                slidesPerView: 2
-            },
-            576: {
-                slidesPerView: 3
-            },
-            768: {
-                slidesPerView: 4
-            },
-            992: {
-                slidesPerView: 5
-            }
-        },
-    });
-    
-    // Category slider active 2
-    var sliderActiveFive = new Swiper('.category-slider-active-2', {
-        loop: true,
-        spaceBetween: 30,
-        slidesPerView: 6,
-        breakpoints: {
-            320: {
-                slidesPerView: 2
-            },
-            479: {
-                slidesPerView: 3
-            },
-            576: {
-                slidesPerView: 3
-            },
-            768: {
-                slidesPerView: 4
-            },
-            992: {
-                slidesPerView: 5
-            }
-        },
-    });
-    
-    // Product slider active 2
-    var sliderActiveSix = new Swiper('.product-slider-active-2', {
-        loop: true,
-        spaceBetween: 30,
-        breakpoints: {
-            320: {
-                slidesPerView: 1
-            },
-            576: {
-                slidesPerView: 2
-            },
-            768: {
-                slidesPerView: 3
-            },
-            992: {
-                slidesPerView: 3
-            },
-            1200: {
-                slidesPerView: 4
-            }
-        },
-    });
-    
-    // Testimonial active
-    var sliderActiveSeven = new Swiper('.testimonial-active', {
-        loop: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        breakpoints: {
-            320: {
-                slidesPerView: 1
-            },
-            576: {
-                slidesPerView: 1
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            1200: {
-                slidesPerView: 3
-            }
-        },
-    });
-    
-    /*----------------------------
-    	Cart Plus Minus Button
-    ------------------------------ */
-    var CartPlusMinus = $('.product-quality');
-    CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
-    CartPlusMinus.append('<div class="inc qtybutton">+</div>');
-    $(".qtybutton").on("click", function() {
-        var $button = $(this);
-        var oldValue = $button.parent().find("input").val();
-        if ($button.text() === "+") {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            // Don't allow decrementing below zero
-            if (oldValue > 1) {
-                var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 1;
-            }
-        }
-        $button.parent().find("input").val(newVal);
-    });
-    
-    /*------ ScrollUp -------- */
-    $.scrollUp({
-        scrollText: '<i class=" ti-arrow-up "></i>',
-        easingType: 'linear',
-        scrollSpeed: 900,
-        animation: 'fade'
-    });
-    
-    /*-----------------
-        Menu Stick
-    -----------------*/
-    var header = $('.sticky-bar');
-    var $window = $(window);
-    $window.on('scroll', function() {
-        var scroll = $window.scrollTop();
-        if (scroll < 200) {
-            header.removeClass('stick');
-        } else {
-            header.addClass('stick');
-        }
-    });
-    
-    /*-------------------------------
-	   Header Search Toggle
-    -----------------------------------*/
-    var searchToggle = $('.search-toggle');
-    searchToggle.on('click', function(e){
-        e.preventDefault();
-        if($(this).hasClass('open')){
-           $(this).removeClass('open');
-           $(this).siblings('.search-wrap-1').removeClass('open');
-        }else{
-           $(this).addClass('open');
-           $(this).siblings('.search-wrap-1').addClass('open');
-        }
-    })
-    
-    /*====== SidebarCart ======*/
-    function miniCart() {
-        var navbarTrigger = $('.cart-active'),
-            endTrigger = $('.cart-close'),
-            container = $('.sidebar-cart-active'),
-            wrapper = $('.main-wrapper');
-        
-        wrapper.prepend('<div class="body-overlay"></div>');
-        
-        navbarTrigger.on('click', function(e) {
-            e.preventDefault();
-            container.addClass('inside');
-            wrapper.addClass('overlay-active');
-        });
-        
-        endTrigger.on('click', function() {
-            container.removeClass('inside');
-            wrapper.removeClass('overlay-active');
-        });
-        
-        $('.body-overlay').on('click', function() {
-            container.removeClass('inside');
-            wrapper.removeClass('overlay-active');
-        });
-    };
-    miniCart();
-    
-    /*====== product-color-active ======*/
-    $(".product-color-active ul li a").on('click', function(e) {
-        e.preventDefault();
-        $(".product-color-active ul li a").removeClass("active");
-        $(this).addClass("active");
-    });
-    
-    /*--------------------------
-        Isotope active 1
-    ---------------------------- */
-    $('.grid').imagesLoaded(function() {
-        // init Isotope
-        $('.grid').isotope({
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            layoutMode: 'masonry',
-            masonry: {
-                // use outer width of grid-sizer for columnWidth
-                columnWidth: '.grid-sizer',
-            }
-        });
-    });
-    
-    /*---------------------
-        Price range
-    --------------------- */
-    var sliderrange = $('#slider-range');
-    var amountprice = $('#amount');
-    $(function() {
-        sliderrange.slider({
-            range: true,
-            min: 20,
-            max: 200,
-            values: [0, 160],
-            slide: function(event, ui) {
-                amountprice.val("$" + ui.values[0] + " - $" + ui.values[1]);
-            }
-        });
-        amountprice.val("$" + sliderrange.slider("values", 0) +
-            " - $" + sliderrange.slider("values", 1));
-    }); 
-    
-    
-    /* NiceSelect */
-    $('.nice-select').niceSelect();
-    
-    /*---- CounterUp ----*/
-    $('.count').counterUp({
-        delay: 10,
-        time: 2000
-    });
-    
-    /*---------------------
-        Select active
-    --------------------- */
-    $('.select-two-active').select2();
-    $(window).on('resize', function(){
-        $('.select-two-active').select2()
-    });
-    
-    /*--- checkout toggle function ----*/
-    $('.checkout-click1').on('click', function(e) {
-        e.preventDefault();
-        $('.checkout-login-info').slideToggle(900);
-    });
-    
-    
-    /*--- checkout toggle function ----*/
-    $('.checkout-click3').on('click', function(e) {
-        e.preventDefault();
-        $('.checkout-login-info3').slideToggle(1000);
-    });
-    
-    /*-------------------------
-    Create an account toggle
-    --------------------------*/
-    $('.checkout-toggle2').on('click', function() {
-        $('.open-toggle2').slideToggle(1000);
-    });
-    
-    $('.checkout-toggle').on('click', function() {
-        $('.open-toggle').slideToggle(1000);
-    });
-    
-    /*-------------------------
-    checkout one click toggle function
-    --------------------------*/
-    var checked = $( '.sin-payment input:checked' )
-    if(checked){
-        $(checked).siblings( '.payment-box' ).slideDown(900);
-    };
-	 $( '.sin-payment input' ).on('change', function() {
-        $( '.payment-box' ).slideUp(900);
-        $(this).siblings( '.payment-box' ).slideToggle(900);
-    });
-    
-    // Instantiate EasyZoom instances
-    var $easyzoom = $('.easyzoom').easyZoom();
-    
-    /*----------------------------------------
-		Product details small img slider 1
-    -----------------------------------------*/
-    var productDetailsSmallOne = new Swiper('.product-details-small-img-slider-1', {
-        loop: false,
-        spaceBetween: 12,
-        slidesPerView: 4,
-        direction: 'vertical',
-        navigation: {
-            nextEl: '.pd-next',
-            prevEl: '.pd-prev',
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 2,
-            },
-            576: {
-                slidesPerView: 4,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            1200: {
-                slidesPerView: 4,
-            },
-        }
-    });
-    
-    /*----------------------------------------
-		Product details big img slider 1
-    -----------------------------------------*/
-    var productDetailsBigThree = new Swiper('.product-details-big-img-slider-1', {
-        autoplay: false,
-        delay: 5000,
-        slidesPerView: 1,
-        loop: false,
-        thumbs: {
-            swiper: productDetailsSmallOne
-        }
-    });
-    
-    /*----------------------------------------
-		Product details small img slider 2
-    -----------------------------------------*/ 
-    var productDetailsSmallTwo = new Swiper('.product-details-small-img-slider-2', {
-        loop: false,
-        spaceBetween: 20,
-        slidesPerView: 4,
-        navigation: {
-            nextEl: '.pd-next-2',
-            prevEl: '.pd-prev-2',
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 2,
-            },
-            479: {
-                slidesPerView: 3,
-            },
-            576: {
-                slidesPerView: 4,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            1200: {
-                slidesPerView: 4,
-            },
-        }
-    });
-    
-    /*----------------------------------------
-		Product details big img slider 2
-    -----------------------------------------*/
-    var productDetailsBigTwo = new Swiper('.product-details-big-img-slider-2', {
-        autoplay: false,
-        delay: 5000,
-        slidesPerView: 1,
-        loop: false,
-        thumbs: {
-            swiper: productDetailsSmallTwo
-        }
-    });
-    
-    // Related product active
-    var relatedProductActive = new Swiper('.related-product-active', {
-        loop: true,
-        spaceBetween: 30,
-        breakpoints: {
-            320: {
-                slidesPerView: 1
-            },
-            576: {
-                slidesPerView: 2
-            },
-            768: {
-                slidesPerView: 3
-            },
-            992: {
-                slidesPerView: 3
-            },
-            1200: {
-                slidesPerView: 4
-            }
-        },
-    });
-    
-    /*-----------------------
-        Image Popup active
-    ------------------------*/
-    $('.img-popup').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-    
-    /*====== mobile-menu active ======*/
-    const slinky = $('#mobile-menu').slinky();
-    const slinky2 = $('#mobile-currency').slinky();
-    const slinky3 = $('#mobile-language').slinky();
-    
-    /*====== off canvas active ======*/
-    function mobileMainMenu() {
-        var navbarTrigger = $('.mobile-menu-active-button'),
-            endTrigger = $('.off-canvas-close'),
-            container = $('.off-canvas-active'),
-            wrapper = $('.main-wrapper-2');
-        
-        wrapper.prepend('<div class="body-overlay-2"></div>');
-        
-        navbarTrigger.on('click', function(e) {
-            e.preventDefault();
-            container.addClass('inside');
-            wrapper.addClass('overlay-active-2');
-        });
-        
-        endTrigger.on('click', function() {
-            container.removeClass('inside');
-            wrapper.removeClass('overlay-active-2');
-        });
-        
-        $('.body-overlay-2').on('click', function() {
-            container.removeClass('inside');
-            wrapper.removeClass('overlay-active-2');
-        });
-    };
-    mobileMainMenu();
-    
-    /*-------------------------
-      Scroll Animation
-    --------------------------*/
-    AOS.init({
-        once: true,
-        duration: 1000,
-    });
-    
-})(jQuery);
+/***************************************************
+==================== JS INDEX ======================
+****************************************************
+01. PreLoader Js
+02. Mobile Menu Js
+03. Sidebar Js
+04. Body overlay Js
+05. Search Js
+06. Sticky Header Js
+07. Data CSS Js
+08. Nice Select Js
+09. slider__active Slider Js
+10. product__sale-slider
+11. product__item-slider
+12. product__item-slider-2
+13. product-slider-3
+14. product__item-trending-slider
+15. product__item-trending-slider-2
+16. product__hot-slider
+17. banner__slider-active
+18. blog__slider
+19. brand__slider
+20. brand__slider-2
+21. blog__slider-2
+22. blog__slider-3
+23. product__tb-slider
+24. Masonary Js
+25. magnificPopup img view
+26. magnificPopup video view
+27. Wow Js
+28. Cart Quantity Js
+29. Show Login Toggle Js
+30. Show Coupon Toggle Js
+31. Create An Account Toggle Js
+32. Shipping Box Toggle Js
+33. Parallax Js
+34. InHover Active Js
+35. Data Countdown Js
+36. range slider activation
 
+****************************************************/
+
+(function ($) {
+	"use strict";
+
+	////////////////////////////////////////////////////
+	// 01. Preloder Js
+	$(window).on('load',function() {
+		$("#loading").fadeOut(500);
+	});
+
+	////////////////////////////////////////////////////
+	// 02. Mobile Menu Js
+	$('#mobile-menu').meanmenu({
+		meanMenuContainer: '.mobile-menu',
+		meanScreenWidth: "1199",
+		meanExpand: ['<i class="fal fa-plus"></i>'],
+	});
+	$('#mobile-menu-2').meanmenu({
+		meanMenuContainer: '.mobile-menu-2',
+		meanScreenWidth: "1199",
+		meanExpand: ['<i class="fal fa-plus"></i>'],
+	});
+
+	////////////////////////////////////////////////////
+	// 03. Sidebar Js
+	$(".offcanvas-toggle-btn").on("click", function () {
+		$(".offcanvas__area").addClass("opened");
+		$(".body-overlay").addClass("opened");
+	});
+	$(".offcanvas__close-btn").on("click", function () {
+		$(".offcanvas__area").removeClass("opened");
+		$(".body-overlay").removeClass("opened");
+	});
+
+	////////////////////////////////////////////////////
+	// 04. Body overlay Js
+	$(".body-overlay").on("click", function () {
+		$(".offcanvas__area").removeClass("opened");
+		$(".body-overlay").removeClass("opened");
+	});
+
+	////////////////////////////////////////////////////
+	// 05. Search Js
+	$(".search-toggle").on("click", function () {
+		$(".search__area").addClass("opened");
+	});
+	$(".search-close-btn").on("click", function () {
+		$(".search__area").removeClass("opened");
+	});
+
+	////////////////////////////////////////////////////
+	// 07. Data CSS Js
+	$("[data-background").each(function () {
+		$(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
+	});
+	$("[data-width]").each(function () {
+		$(this).css("width", $(this).attr("data-width"));
+	});
+
+	$("[data-bg-color]").each(function () {
+        $(this).css("background-color", $(this).attr("data-bg-color"));
+    });
+
+	////////////////////////////////////////////////////
+	// 08. Nice Select Js
+	$('select').niceSelect();
+
+	////////////////////////////////////////////////////
+	// 09. slider__active Slider Js
+	if (jQuery(".slider__active").length > 0) {
+		let sliderActive1 = ".slider__active";
+		let sliderInit1 = new Swiper(sliderActive1, {
+			// Optional parameters
+			slidesPerView: 1,
+			slidesPerColumn: 1,
+			paginationClickable: true,
+			loop: true,
+			effect: 'fade',
+
+			autoplay: {
+				delay: 5000,
+			},
+
+
+			// Navigation arrows
+			navigation: {
+				nextEl: ".main-slider-button-next",
+				prevEl: ".main-slider-button-prev",
+			},
+
+			a11y: false,
+		});
+
+		function animated_swiper(selector, init) {
+			let animated = function animated() {
+				$(selector + " [data-animation]").each(function () {
+					let anim = $(this).data("animation");
+					let delay = $(this).data("delay");
+					let duration = $(this).data("duration");
+
+					$(this)
+						.removeClass("anim" + anim)
+						.addClass(anim + " animated")
+						.css({
+							webkitAnimationDelay: delay,
+							animationDelay: delay,
+							webkitAnimationDuration: duration,
+							animationDuration: duration,
+						})
+						.one(
+							"webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+							function () {
+								$(this).removeClass(anim + " animated");
+							}
+						);
+				});
+			};
+			animated();
+			// Make animated when slide change
+			init.on("slideChange", function () {
+				$(sliderActive1 + " [data-animation]").removeClass("animated");
+			});
+			init.on("slideChange", animated);
+		}
+
+		animated_swiper(sliderActive1, sliderInit1);
+	}
+	var sliderr = new Swiper('.active-class', {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		loop: true,
+		pagination: {
+			el: ".testimonial-pagination-6",
+			clickable: true,
+			renderBullet: function (index, className) {
+			  return '<span class="' + className + '">' + '<button>'+(index + 1)+'</button>' + "</span>";
+			},
+		},
+		breakpoints: {
+			'1200': {
+				slidesPerView: 3,
+			},
+			'992': {
+				slidesPerView: 2,
+			},
+			'768': {
+				slidesPerView: 2,
+			},
+			'576': {
+				slidesPerView: 1,
+			},
+			'0': {
+				slidesPerView: 1,
+			},
+		},
+	});
+
+	///////////////////////////////////////////////////
+	// 10. product__sale-slider
+	$(".product__sale-slider").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 0,
+		items: 1,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 1
+			},
+			992: {
+				items: 1
+			},
+			1200: {
+				items: 1
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 11. product__item-slider
+	$(".product__item-slider").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 28,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			576: {
+				items: 2
+			},
+			767: {
+				items: 2
+			},
+			992: {
+				items: 2
+			},
+			1200: {
+				items: 3
+			},
+			1400: {
+				items: 3
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 12. product__item-slider-2
+	$(".product__item-slider-2").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 2,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			576: {
+				items: 1
+			},
+			767: {
+				items: 2
+			},
+			992: {
+				items: 1
+			},
+			1200: {
+				items: 2
+			},
+			1400: {
+				items: 2
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 13. product-slider-3
+	$(".product-slider-3").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 2,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: false,
+		dots: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			576: {
+				items: 1
+			},
+			767: {
+				items: 1
+			},
+			992: {
+				items: 1
+			},
+			1200: {
+				items: 1
+			},
+			1400: {
+				items: 1
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 14. product__item-trending-slider
+	$(".product__item-trending-slider").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 3
+			},
+			992: {
+				items: 4
+			},
+			1200: {
+				items: 5
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 15. product__item-trending-slider-2
+	$(".product__item-trending-slider-2").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: false,
+		dots: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 3
+			},
+			992: {
+				items: 4
+			},
+			1200: {
+				items: 5
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 16. product__hot-slider
+	$(".product__hot-slider").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 3
+			},
+			992: {
+				items: 2
+			},
+			1200: {
+				items: 3
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 17. banner__slider-active
+	$(".banner__slider-active").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 1
+			},
+			992: {
+				items: 1
+			},
+			1200: {
+				items: 1
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 18. blog__slider
+	$(".blog__slider").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 2
+			},
+			992: {
+				items: 2
+			},
+			1200: {
+				items: 3
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 19. brand__slider
+	$(".brand__slider").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 2
+			},
+			767: {
+				items: 2
+			},
+			992: {
+				items: 3
+			},
+			1200: {
+				items: 6
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 20. brand__slider-2
+	$(".brand__slider-2").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: false,
+		dots: false,
+		responsive: {
+			0: {
+				items: 2
+			},
+			767: {
+				items: 4
+			},
+			992: {
+				items: 5
+			},
+			1200: {
+				items: 6
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 21. blog__slider-2
+	$(".blog__slider-2").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 2
+			},
+			992: {
+				items: 2
+			},
+			1200: {
+				items: 3
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 22. blog__slider-3
+	$(".blog__slider-3").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 2
+			},
+			992: {
+				items: 2
+			},
+			1200: {
+				items: 3
+			}
+		}
+	});
+
+	///////////////////////////////////////////////////
+	// 23. product__tb-slider
+	$(".product__tb-slider").owlCarousel({
+		//add owl carousel in activation class
+		loop: true,
+		margin: 30,
+		items: 3,
+		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		nav: true,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 3
+			},
+			992: {
+				items: 4
+			},
+			1200: {
+				items: 5
+			}
+		}
+	});
+
+	////////////////////////////////////////////////////
+	// 24. Masonary Js
+	$('.grid').imagesLoaded(function () {
+		// init Isotope
+		var $grid = $('.grid').isotope({
+			itemSelector: '.grid-item',
+			percentPosition: true,
+			masonry: {
+				// use outer width of grid-sizer for columnWidth
+				columnWidth: '.grid-item',
+			}
+		});
+
+
+		// filter items on button click
+		$('.masonary-menu').on('click', 'button', function () {
+			var filterValue = $(this).attr('data-filter');
+			$grid.isotope({ filter: filterValue });
+		});
+
+		//for menu active class
+		$('.masonary-menu button').on('click', function (event) {
+			$(this).siblings('.active').removeClass('active');
+			$(this).addClass('active');
+			event.preventDefault();
+		});
+
+	});
+
+	/*  25. magnificPopup img view */
+	$('.popup-image').magnificPopup({
+		type: 'image',
+		gallery: {
+			enabled: true
+		}
+	});
+
+	/* 26. magnificPopup video view */
+	$(".popup-video").magnificPopup({
+		type: "iframe",
+	});
+
+	////////////////////////////////////////////////////
+	// 27. Wow Js
+	new WOW().init();
+
+	////////////////////////////////////////////////////
+	// 28. Cart Quantity Js
+	$('.cart-minus').click(function () {
+		var $input = $(this).parent().find('input');
+		var count = parseInt($input.val()) - 1;
+		count = count < 1 ? 1 : count;
+		$input.val(count);
+		$input.change();
+		return false;
+	});
+	$('.cart-plus').click(function () {
+		var $input = $(this).parent().find('input');
+		$input.val(parseInt($input.val()) + 1);
+		$input.change();
+		return false;
+	});
+
+	$(".cart-plus-minus").append('<div class="dec qtybutton">-</div><div class="inc qtybutton">+</div>');
+	$(".qtybutton").on("click", function () {
+		var $button = $(this);
+		var oldValue = $button.parent().find("input").val();
+		if ($button.text() == "+") {
+			var newVal = parseFloat(oldValue) + 1;
+		} else {
+			// Don't allow decrementing below zero
+			if (oldValue > 0) {
+				var newVal = parseFloat(oldValue) - 1;
+			} else {
+				newVal = 0;
+			}
+		}
+		$button.parent().find("input").val(newVal);
+	});
+
+	////////////////////////////////////////////////////
+	// 29. Show Login Toggle Js
+	$('#showlogin').on('click', function () {
+		$('#checkout-login').slideToggle(900);
+	});
+
+	////////////////////////////////////////////////////
+	// 30. Show Coupon Toggle Js
+	$('#showcoupon').on('click', function () {
+		$('#checkout_coupon').slideToggle(900);
+	});
+
+	////////////////////////////////////////////////////
+	// 31. Create An Account Toggle Js
+	$('#cbox').on('click', function () {
+		$('#cbox_info').slideToggle(900);
+	});
+
+	////////////////////////////////////////////////////
+	// 32. Shipping Box Toggle Js
+	$('#ship-box').on('click', function () {
+		$('#ship-box-info').slideToggle(1000);
+	});
+
+	////////////////////////////////////////////////////
+	// 33. Counter Js
+	$('.counter').counterUp({
+		delay: 10,
+		time: 1000
+	});
+
+	////////////////////////////////////////////////////
+	// 34. Parallax Js
+	if ($('.scene').length > 0) {
+		$('.scene').parallax({
+			scalarX: 10.0,
+			scalarY: 15.0,
+		});
+	};
+
+	////////////////////////////////////////////////////
+	// 35. InHover Active Js
+	$('.hover__active').on('mouseenter', function () {
+		$(this).addClass('active').parent().siblings().find('.hover__active').removeClass('active');
+	});
+
+	////////////////////////////////////////////////////
+    // 36. Data Countdown Js
+    $('[data-countdown]').each(function() {
+
+        var $this = $(this),
+            finalDate = $(this).data('countdown');
+
+        $this.countdown(finalDate, function(event) {
+
+            $this.html(event.strftime('<span class="cdown days"><span class="time-count">%-D</span> <p>Days</p></span> <span class="cdown hour"><span class="time-count">%-H</span> <p>Hrs</p></span> <span class="cdown minutes"><span class="time-count">%M</span> <p>Min</p></span> <span class="cdown second"> <span><span class="time-count">%S</span> <p>Sec</p></span>'));
+
+        });
+
+    });
+
+	////////////////////////////////////////////////////
+    // 37. range slider activation
+	if ($('#slider-range').length > 0) {
+		
+		$("#slider-range").slider({
+		range: true,
+		min: 0,
+		max: 500,
+		values: [75, 300],
+		slide: function (event, ui) {
+			$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+		},
+		});
+	}
+
+})(jQuery);

@@ -19,9 +19,9 @@ public class MainController {
     private UserService userService;
 
     @GetMapping("/")
-    public String index(Principal principal, Model model) {
-        model.addAttribute("user", userService.getUserByPrincipal(principal));
-        return "index";
+    public String index() {
+//        model.addAttribute("user", userService.getUserByPrincipal(principal));
+        return "index222";
     }
 
     @GetMapping("/index_5")
