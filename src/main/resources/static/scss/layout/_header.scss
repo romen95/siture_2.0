@@ -375,7 +375,7 @@
         }
         &-2{
             & ul{
-                & li{                   
+                & li{
                     & a{
                         & .cart-count{
                             background-color: $theme-color-3;
@@ -718,7 +718,7 @@
                     opacity: 1;
                 }
             }
-    
+
             // mega menu
             & .mega-menu{
                 position: absolute;
@@ -803,8 +803,8 @@
                     }
                 }
             }
-    
-            // submenu 
+
+            // submenu
             & .submenu{
                 position: absolute;
                 top: 0;
@@ -854,7 +854,7 @@
                                 height: 100%;
                                 bottom: auto;
                                 top: 0;
-                            } 
+                            }
                         }
                         & > .submenu{
                             visibility: visible;
