@@ -73,7 +73,7 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
-  color: #111111;
+  color: #ffffff;
   margin-top: 0px;
   font-weight: 700;
   line-height: 1.2;
@@ -419,8 +419,8 @@ input {
   display: inline-block;
   font-size: 13px;
   color: #ffffff;
-  background-color: #db3340;
-  border: 2px solid #db3340;
+  background-color: #b9a16b;
+  border: 2px solid #b9a16b;
   height: 38px;
   line-height: 32px;
   text-align: center;
@@ -437,8 +437,8 @@ input {
   color: #ffffff;
 }
 .b-btn-3:focus {
-  background-color: #db3340;
-  border-color: #db3340;
+  background-color: #b9a16b;
+  border-color: #b9a16b;
   color: #ffffff;
 }
 
@@ -5016,7 +5016,7 @@ input {
   padding-bottom: 40px;
 }
 .features-2__content-2 p {
-  color: #555555;
+  color: #ffffff;
 }
 
 .brand__area .owl-carousel .owl-item img {
@@ -5214,10 +5214,10 @@ input {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ff8429;
+  color: #b9a16b;
   position: relative;
   padding-left: 125px;
-  margin-bottom: 13px;
+  margin-bottom: 30px;
   display: inline-block;
 }
 @media (max-width: 575px) {
@@ -5233,7 +5233,7 @@ input {
   width: 100px;
   height: 2px;
   transform: translateY(-50%);
-  background: #ff8429;
+  background: #b9a16b;
 }
 @media (max-width: 575px) {
   .about__history-title-pre::after {
@@ -5242,11 +5242,11 @@ input {
 }
 .about__history-wrapper p {
   font-size: 14px;
-  color: #555555;
+  color: #ffffff;
 }
 .about__history-wrapper p.about__history-text {
   font-size: 16px;
-  color: #222;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 .about__gallery-review {
