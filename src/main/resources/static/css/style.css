@@ -5249,46 +5249,26 @@ input {
   color: #ffffff;
   margin-bottom: 30px;
 }
-.about__gallery-review {
-  padding: 124px 200px;
-}
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {
-  .about__gallery-review {
-    padding-top: 98px;
-    padding-bottom: 150px;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .about__gallery-review {
-    padding: 80px 115px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about__gallery-review {
-    padding: 55px 45px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about__gallery-review {
-    padding: 70px 55px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .about__gallery-review {
-    padding: 70px 75px;
-  }
-}
-@media (max-width: 575px) {
-  .about__gallery-review {
-    padding: 50px 20px;
-  }
-}
+
 .about__gallery-review h3 {
-  font-size: 18px;
+  font-size: 40px;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .about__gallery-review h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about__gallery-review h3 {
+    font-size: 34px;
+  }
 }
 .about__gallery-review span {
   font-size: 12px;
@@ -7544,5 +7524,50 @@ p.checkout-coupon input[type=text]::placeholder {
     width: 6.333333%;
   }
 }
+
+.min-height-my {
+  min-height: 536px;
+}
+
+@media only screen and (max-width: 1399px) {
+  .min-height-my {
+    min-height: 460px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .min-height-my {
+    min-height: 385px;
+  }
+}
+
+.min-height-my-wardboard {
+  min-height: 323px;
+}
+
+.min-height-my-wallpanels {
+  min-height: 536px;
+}
+
+@media only screen and (max-width: 1399px) {
+  .min-height-my-wallpanels {
+    min-height: 460px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .min-height-my-wallpanels {
+    min-height: 385px;
+  }
+}
+
+.project:hover {
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  transition: all 0.3s ease-out;
+}
+
 
 /*# sourceMappingURL=style.css.map */

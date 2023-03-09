@@ -594,27 +594,28 @@
     <!-- about__offer end -->
 
     <!-- about__gallery-start -->
-    <section class="about__gallery mt-30 mb-30">
+    <section class="bg-black about__gallery pt-30 pb-30">
         <div class="container">
+            <span class="about__history-title-pre">Наши проекты</span>
             <div class="row gx-2">
                 <div class="col-xxl-8 col-xl-8 col-lg-8">
-                    <div class="about__gallery-wrapper text-center ">
-                        <div class="about__gallery-review include-bg mb-8" th:data-background="@{/img/about/about-img-1.jpg}">
-                            <h3>Alex Christopher</h3>
-                            <span>PHOTOGRAPHER</span>
-                            <p>Being a designer goes a step further than trying to evoke emotion, it’s trying to make a reaction. It is objective-driven, and that’s what makes it interesting. Designing a product is designing a relationship. Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humor.</p>
-
-                            <img th:src="@{/img/about/singature.png}" alt="" class="about__signature">
+                    <div class="about__gallery-wrapper">
+                        <div class="project d-flex align-items-center min-height-my about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/kitchens.webp}">
+                            <h3>Кухни</h3>
                         </div>
                         <div class="row gx-2">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <div class="about__gallery-thumb w-img mb-10">
-                                    <img th:src="@{/img/about/about-img-3.jpg}" alt="">
+                                    <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/wardboards.webp}">
+                                        <h3>Шкафы</h3>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <div class="about__gallery-thumb w-img mb-10">
-                                    <img th:src="@{/img/about/about-img-4.jpg}" alt="">
+                                    <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/dressrooms.webp}">
+                                        <h3>Гардеробные</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -622,10 +623,14 @@
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4">
                     <div class="about__gallery-thumb mb-8 w-img">
-                        <img th:src="@{/img/about/about-img-2.jpg}" alt="">
+                        <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/consoles.webp}">
+                            <h3>Консоли</h3>
+                        </div>
                     </div>
-                    <div class="about__gallery-thumb w-img">
-                        <img th:src="@{/img/about/about-img-5.jpg}" alt="">
+                    <div class="about__gallery-thumb mb-8 w-img">
+                        <div class="project d-flex align-items-center min-height-my-wallpanels about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/wallpanels.webp}">
+                            <h3>Стеновые панели</h3>
+                        </div>
                     </div>
                 </div>
             </div>
