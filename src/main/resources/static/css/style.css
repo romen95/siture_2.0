@@ -7533,4 +7533,16 @@ p.checkout-coupon input[type=text]::placeholder {
   margin-left: 5px;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .col-lg-8-new {
+    width: 68.666667%
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .col-lg-1-new {
+    width: 6.333333%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
