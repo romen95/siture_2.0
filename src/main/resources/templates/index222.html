@@ -511,7 +511,7 @@
                                     <h3 class="slider__title" data-animation="fadeInUp" data-delay=".5s">Изготовление
                                         корпусной мебели на заказ</h3>
                                     <div class="slider__btn" data-animation="fadeInUp" data-delay=".4s">
-                                        <a href="shop.html" class="b-btn-3">Заказать мебель <i
+                                        <a id="modal-btn-my" class="b-btn-3">Заказать мебель <i
                                                 class="fal fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -530,7 +530,7 @@
                                     <h3 class="slider__title" data-animation="fadeInUp" data-delay=".5s">Мебель на заказ
                                         по дизайн-проекту</h3>
                                     <div class="slider__btn" data-animation="fadeInUp" data-delay=".4s">
-                                        <a href="shop.html" class="b-btn-3">Отправить на расчёт <i
+                                        <a id="modal-btn-my1" class="b-btn-3">Отправить на расчёт <i
                                                 class="fal fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -575,7 +575,7 @@
     <!-- about__history-end -->
 
     <!-- about__offer start -->
-    <section class="about__offer pt-155 pb-130 include-bg" th:data-background="@{/img/bg/about-bg-1.jpg}" >
+    <section class="about__offer pt-155 pb-130 include-bg" th:data-background="@{/img/bg/about-bg-1.webp}">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xxl-8 col-xl-8 col-lg-10">
@@ -584,8 +584,11 @@
                             <i class="text-white fal fa-regular fa-drafting-compass fa-7x"></i>
                         </div>
                         <h3>Уже есть готовый дизайн проект?</h3>
-                        <p>Хотите узнать, сколько будет стоить создание идеальной мебели для вашего интерьера? Если у вас уже есть готовый дизайн проект, то вы можете отправить его нам и мы рассчитаем стоимость каждого изделия. Сделайте первый шаг к созданию своей идеальной мебели и отправьте дизайн проект нашим специалистам прямо сейчас!</p>
-                        <a href="shop.html" class="b-btn-3 mt-30">Отправить на расчёт <i class="fal fa-angle-right"></i></a>
+                        <p>Хотите узнать, сколько будет стоить создание идеальной мебели для вашего интерьера? Если у
+                            вас уже есть готовый дизайн проект, то вы можете отправить его нам и мы рассчитаем стоимость
+                            каждого изделия. Сделайте первый шаг к созданию своей идеальной мебели и отправьте дизайн
+                            проект нашим специалистам прямо сейчас!</p>
+                        <a class="b-btn-3 mt-30">Отправить на расчёт <i class="fal fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -600,20 +603,23 @@
             <div class="row gx-2">
                 <div class="col-xxl-8 col-xl-8 col-lg-8">
                     <div class="about__gallery-wrapper">
-                        <div class="project d-flex align-items-center min-height-my about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/kitchens.webp}">
+                        <div class="project d-flex align-items-center min-height-my about__gallery-review include-bg mb-8"
+                             th:data-background="@{/img/projects/kitchens.webp}">
                             <h3>Кухни</h3>
                         </div>
                         <div class="row gx-2">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <div class="about__gallery-thumb w-img mb-10">
-                                    <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/wardboards.webp}">
+                                    <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8"
+                                         th:data-background="@{/img/projects/wardboards.webp}">
                                         <h3>Шкафы</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <div class="about__gallery-thumb w-img mb-10">
-                                    <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/dressrooms.webp}">
+                                    <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8"
+                                         th:data-background="@{/img/projects/dressrooms.webp}">
                                         <h3>Гардеробные</h3>
                                     </div>
                                 </div>
@@ -623,12 +629,14 @@
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4">
                     <div class="about__gallery-thumb mb-8 w-img">
-                        <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/consoles.webp}">
+                        <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8"
+                             th:data-background="@{/img/projects/consoles.webp}">
                             <h3>Консоли</h3>
                         </div>
                     </div>
                     <div class="about__gallery-thumb mb-8 w-img">
-                        <div class="project d-flex align-items-center min-height-my-wallpanels about__gallery-review include-bg mb-8" th:data-background="@{/img/projects/wallpanels.webp}">
+                        <div class="project d-flex align-items-center min-height-my-wallpanels about__gallery-review include-bg mb-8"
+                             th:data-background="@{/img/projects/wallpanels.webp}">
                             <h3>Стеновые панели</h3>
                         </div>
                     </div>
@@ -651,7 +659,8 @@
                         </div>
                         <div class="features-2__content-2">
                             <h3 class="features-2__title-2">Уникальные решения</h3>
-                            <p>Индивидуальный подход к каждому клиенту - разрабатываем мебель на заказ, учитывая личные пожелания клиента.</p>
+                            <p>Индивидуальный подход к каждому клиенту - разрабатываем мебель на заказ, учитывая личные
+                                пожелания клиента.</p>
                         </div>
                     </div>
                 </div>
@@ -662,7 +671,8 @@
                         </div>
                         <div class="features-2__content-2">
                             <h3 class="features-2__title-2">Высокое качество материалов</h3>
-                            <p>Мы используем только качественные и проверенные материалы и фурнитуру от ведущих производителей.</p>
+                            <p>Мы используем только качественные и проверенные материалы и фурнитуру от ведущих
+                                производителей.</p>
                         </div>
                     </div>
                 </div>
@@ -673,7 +683,9 @@
                         </div>
                         <div class="features-2__content-2">
                             <h3 class="features-2__title-2">Опытные специалисты</h3>
-                            <p>В нашей компании работают опытные специалисты, которые знают все нюансы изготовления качественной корпусной мебели. Они обладают высоким уровнем профессионализма и всегда готовы поделиться своими знаниями и опытом с нашими клиентами.</p>
+                            <p>В нашей компании работают опытные специалисты, которые знают все нюансы изготовления
+                                качественной корпусной мебели. Они обладают высоким уровнем профессионализма и всегда
+                                готовы поделиться своими знаниями и опытом с нашими клиентами.</p>
                         </div>
                     </div>
                 </div>
@@ -684,7 +696,9 @@
                         </div>
                         <div class="features-2__content-2">
                             <h3 class="features-2__title-2">Гарантия на изделия - 2 года!</h3>
-                            <p>Мы гарантируем высокое качество нашей продукции. Вся мебель проходит тщательную проверку перед тем, как попасть к клиенту. Мы несем ответственность за каждую деталь и гарантируем ее качество.</p>
+                            <p>Мы гарантируем высокое качество нашей продукции. Вся мебель проходит тщательную проверку
+                                перед тем, как попасть к клиенту. Мы несем ответственность за каждую деталь и
+                                гарантируем ее качество.</p>
                         </div>
                     </div>
                 </div>
@@ -826,6 +840,35 @@
     </div>
     <!-- shop modal end -->
 
+    <!-- modal start -->
+    <div id="modal-my" class="modal-my">
+        <div class="d-flex align-items-center m-auto modal-content-my">
+            <!-- checkout-area start -->
+            <section class="checkout-area pb-85">
+                <form action="#">
+                    <div class="checkbox-form">
+                        <h3>Billing Details</h3>
+                        <div class="row">
+                            <div class="checkout-form-list">
+                                <label>Address <span class="required">*</span></label>
+                                <input type="text" placeholder="Street address">
+                            </div>
+                            <div class="checkout-form-list">
+                                <label>Town / City <span class="required">*</span></label>
+                                <input type="text" placeholder="Town / City">
+                            </div>
+                            <div class="checkout-form-list create-acc">
+                                <input id="cbox" type="checkbox">
+                                <label>Create an account?</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <!-- checkout-area end -->
+        </div>
+    </div>
+    <!-- modal end -->
 </main>
 
 <!-- footer area start -->

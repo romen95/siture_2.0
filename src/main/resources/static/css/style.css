@@ -6446,6 +6446,7 @@ p.checkout-coupon input[type=text]::placeholder {
 
 .checkbox-form h3 {
   border-bottom: 1px solid #e4e4e4;
+  color: #000000;
   font-size: 26px;
   margin: 0 0 20px;
   padding-bottom: 10px;
@@ -7569,5 +7570,34 @@ p.checkout-coupon input[type=text]::placeholder {
   transition: all 0.3s ease-out;
 }
 
+.modal-my {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
 
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.checkout-area {
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */

@@ -735,3 +735,26 @@
 	}
 
 })(jQuery);
+
+const modal = document.getElementById("modal-my");
+const modalBtn = document.getElementById("modal-btn-my");
+const modalBtn1 = document.getElementById("modal-btn-my1");
+const closeBtn = document.getElementsByClassName("close-my")[0];
+
+modalBtn.onclick = function() {
+	modal.style.display = "block";
+}
+
+modalBtn1.onclick = function() {
+	modal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+	modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
