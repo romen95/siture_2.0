@@ -2,6 +2,7 @@ package com.siture.webApplication.controllers;
 
 import com.siture.webApplication.files.BitrixService;
 import com.siture.webApplication.repositories.ProjectRepository;
+import com.siture.webApplication.services.EmailSenderService;
 import com.siture.webApplication.services.ProjectService;
 import com.siture.webApplication.services.UserService;
 import lombok.AllArgsConstructor;
@@ -17,9 +18,11 @@ public class MainController {
     private ProjectRepository projectRepository;
     private final ProjectService projectService;
     private UserService userService;
+    private EmailSenderService emailSenderService;
 
     @GetMapping("/")
     public String index() {
+        emailSenderService.sendSimpleEmail("romenromenromen95@gmail.com", "Тема письма", "Привет!");
 //        model.addAttribute("user", userService.getUserByPrincipal(principal));
         return "index222";
     }
