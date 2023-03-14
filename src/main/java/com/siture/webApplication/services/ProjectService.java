@@ -15,8 +15,7 @@ import java.util.Optional;
 public class ProjectService {
     private final ProjectRepository projectRepository;
 
-    public List<Project> listProjects(String title) {
-        if (title != null) return projectRepository.findByTitle(title);
+    public List<Project> listProjects() {
         return projectRepository.findAll();
     }
 

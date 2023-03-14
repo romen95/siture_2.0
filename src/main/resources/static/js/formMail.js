@@ -1,12 +1,24 @@
-$(document).ready(function() {
-    $.get('/get_message', function(data) {
-        console.log(data)
-    })
-});
+$("#sendMail").on("click", function() {
+    var name = $("#name").val().trim();
+    var phone = $("#phone").val().trim();
+    var message = $("#message").val().trim();
+    var checkbox = $("#checkbox");
 
-function send_message() {
+    if (name == "") {
+        $("#errorMess").text("Введите имя");
+        return false;
+    } else if (phone == "") {
+        $("#errorMess").text("Введите номер телефона");
+        return false;
+    } else if (!(checkbox.is(':checked'))) {
+        $("#errorMess").text("Поставьте галочку");
+        return false;
+    }
+
+    $("#errorMess").text("");
+
     $.ajax({
-        url: '/add_message',
+        url: '/send',
         dataType: "json",
         type: 'POST',
         cache: false,
@@ -16,11 +28,18 @@ function send_message() {
             phone: $("#phone").val(),
             message: $("#message").val()
         }),
-        success: function() {
-            alert("Готово")
+        beforeSend: function() {
+            $("#sendMail").prop("disabled", true);
+        },
+        complete: function() {
+            $("#formPopup").trigger("reset");
+            $("#closePopup").click();
+            $("#sendMail").prop("disabled", false);
+            $('#popupSuccess').fadeIn(800);
+            $('html').addClass('no-scroll');
         }
-    })
-}
+    });
+})
 
 
 
