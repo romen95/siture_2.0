@@ -1153,7 +1153,7 @@ input {
 
 .page__title-inner h1 {
     font-size: 36px;
-    color: #333;
+    color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 25px;
 }
@@ -1176,20 +1176,20 @@ input {
 .page__title-breadcrumb .breadcrumb-item {
     font-size: 12px;
     text-transform: capitalize;
-    color: #292929;
+    color: #ffffff;
     font-weight: 500;
 }
 
 .page__title-breadcrumb .breadcrumb-item a:hover {
-    color: #ff8429;
+    color: #b9a16b;
 }
 
 .page__title-breadcrumb .breadcrumb-item.active {
-    color: #333;
+    color: #ffffff;
 }
 
 .page__title-breadcrumb .breadcrumb-item.active::before {
-    color: #292929;
+    color: #b9a16b;
 }
 
 /*----------------------------------------*/
