@@ -27,7 +27,7 @@ public class ProjectsController {
 
     @RequestMapping(method = RequestMethod.POST, value = "/send")
     public void sendMessage(@RequestBody MailMessage mailMessage) {
-        emailSenderService.sendSimpleEmail("romenromenromen95@gmail.com", "Заявка с сайта Siture.ru; Имя: " + mailMessage.getName() + ", телефон: " + mailMessage.getPhone(), mailMessage.getMessage());
+        emailSenderService.sendSimpleEmail("roman@siture.ru", "Заявка с сайта Siture.ru; Имя: " + mailMessage.getName() + ", телефон: " + mailMessage.getPhone(), mailMessage.getMessage());
     }
 
 

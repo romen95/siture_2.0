@@ -27,4 +27,6 @@ public class Project {
     private String path;
     @Column(name = "price")
     private int price;
+    @Column(name = "oldPrice")
+    private int oldPrice;
 }
