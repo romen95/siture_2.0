@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @AllArgsConstructor
@@ -49,6 +50,16 @@ public class MainController {
 //        model.addAttribute("user", userService.getUserByPrincipal(principal));
 //        model.addAttribute("projects", projectService.listProjects());
         return "kitchens-shop";
+    }
+
+    @GetMapping("/projects/kitchen/{id}")
+    public String projectsDetails(@PathVariable(value = "id") long id, Model model) {
+
+        Optional<Project> project = projectService.getProjectsById(id);
+        ArrayList<Project> res = new ArrayList<>();
+        project.ifPresent(res::add);
+        model.addAttribute("kitchen", res);
+        return "kitchen-details";
     }
 
     @GetMapping("/index_5")
