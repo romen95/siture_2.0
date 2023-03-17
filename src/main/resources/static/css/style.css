@@ -8913,4 +8913,138 @@ p.checkout-coupon input[type=text]::placeholder {
     color: #ffffff;
 }
 
+
+.swiper-slide-active .single-animation-wrap .slider-animated-1 h3 {
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-1 h1 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-1 a {
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-1 .animated-slider-img-1 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-1 .product-offer {
+    -webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-2 {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-2 h3 {
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-2 h1 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-2 a {
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-2 h2 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-2 img {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-3 h3 {
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-3 h1 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.swiper-slide-active .single-animation-wrap .slider-animated-3 a {
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.swiper-slide-active .single-animation-wrap .hm2-slider-animation * {
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.testimonial-active .swiper-slide {
+    padding: 40px 0 35px;
+}
+
+.testimonial-active .swiper-slide.swiper-slide-active .single-testimonial {
+    border-left: 2px solid #dedbdb;
+    border-right: 2px solid #dedbdb;
+    border-top: 2px solid #dedbdb;
+}
+
+.testimonial-active .swiper-slide.swiper-slide-active .single-testimonial .testimonial-img {
+    opacity: 1;
+    visibility: visible;
+}
+
+.testimonial-active .swiper-slide.swiper-slide-active .single-testimonial:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.testimonial-active .swiper-slide.swiper-slide-active .single-testimonial:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pd-small-img-style .swiper-slide-thumb-active .product-details-small-img img {
+    opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
