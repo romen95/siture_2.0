@@ -59,6 +59,7 @@ public class MainController {
         ArrayList<Project> res = new ArrayList<>();
         project.ifPresent(res::add);
         model.addAttribute("kitchen", res);
+
         return "kitchen-details";
     }
 
