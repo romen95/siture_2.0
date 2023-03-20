@@ -1,21 +1,21 @@
-$("#sendMail").on("click", function() {
+$(".send-mail").on("click", function() {
     var name = $("#name").val().trim();
     var phone = $("#phone").val().trim();
     var message = $("#message").val().trim();
     var checkbox = $("#checkbox");
 
     if (name == "") {
-        $("#errorMess").text("Введите имя");
+        $(".err-message").text("Введите имя");
         return false;
     } else if (phone == "") {
-        $("#errorMess").text("Введите номер телефона");
+        $(".err-message").text("Введите номер телефона");
         return false;
     } else if (!(checkbox.is(':checked'))) {
-        $("#errorMess").text("Поставьте галочку");
+        $(".err-message").text("Поставьте галочку");
         return false;
     }
 
-    $("#errorMess").text("");
+    $(".err-message").text("");
 
     $.ajax({
         url: '/send',
@@ -29,13 +29,13 @@ $("#sendMail").on("click", function() {
             message: $("#message").val()
         }),
         beforeSend: function() {
-            $("#sendMail").prop("disabled", true);
+            $(".send-mail").prop("disabled", true);
         },
         complete: function() {
-            $("#formPopup").trigger("reset");
-            $("#closePopup").click();
-            $("#sendMail").prop("disabled", false);
-            $('#popupSuccess').fadeIn(800);
+            $(".form-popup").trigger("reset");
+            $(".close-popup").click();
+            $(".send-mail").prop("disabled", false);
+            $('.popup-success').fadeIn(800);
             $('html').addClass('no-scroll');
         }
     });

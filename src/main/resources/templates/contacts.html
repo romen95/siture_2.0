@@ -71,27 +71,27 @@
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li class="has-dropdown">
-                                            <a href="/">Главная</a>
+                                            <a href="index222.html">Главная</a>
                                             <ul class="submenu">
                                                 <li>
-                                                    <a href="#about">О нас</a>
+                                                    <a href="index222.html">О нас</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#projects">Проекты</a>
+                                                    <a href="index-2.html">Home Style 2</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#advantages">Преимущества</a>
+                                                    <a href="index-3.html">Home Style 3</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#">Как мы работаем?</a>
+                                            <a href="shop.html">Как мы работаем?</a>
                                         </li>
                                         <li>
-                                            <a href="#">Дизайнерам</a>
+                                            <a href="blog.html">Дизайнерам</a>
                                         </li>
                                         <li>
-                                            <a href="/contacts">Контакты</a>
+                                            <a href="about.html">Контакты</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -106,7 +106,7 @@
                 <div class="row align-items-center">
                     <div class="col-xxl-2 col-xl-2 col-lg-3 col-6">
                         <div class="logo">
-                            <a href="/">
+                            <a href="index222.html">
                                 <img th:src="@{/img/logo/logo.png}" alt="">
                             </a>
                         </div>
@@ -118,12 +118,59 @@
                                 <div class="side-submenu transition-3">
                                     <nav>
                                         <ul>
-                                            <li>
-                                                <a href="/projects/kitchens/1">
+                                            <li class="has-dropdown">
+                                                <a href="shop.html">
                                                     <i class="fal fa-headphones"></i>
-                                                    Кухни
+                                                    All
                                                 </a>
-                                            <li>
+                                                <ul class="mega-menu" data-background="assets/img/bg/mega-bg.jpg">
+                                                    <li><a href="shop.html">Shop Pages</a>
+                                                        <ul class="mega-item">
+                                                            <li><a href="shop.html">Standard SHop Page</a></li>
+                                                            <li><a href="shop.html">Shop Right Sidebar</a></li>
+                                                            <li><a href="shop.html">Shop Left Sidebar</a></li>
+                                                            <li><a href="shop.html">Shop 3 Column</a></li>
+                                                            <li><a href="shop.html">Shop 4 Column</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="shop.html">Product Pages</a>
+                                                        <ul class="mega-item">
+                                                            <li><a href="product-details.html">Product Details</a></li>
+                                                            <li><a href="product-details.html">Product V2</a></li>
+                                                            <li><a href="product-details.html">Product V3</a></li>
+                                                            <li><a href="product-details.html">Varriable Product</a>
+                                                            </li>
+                                                            <li><a href="product-details.html">External Product</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="about.html">Other Pages</a>
+                                                        <ul class="mega-item">
+                                                            <li><a href="wishlist.html">wishlist</a></li>
+                                                            <li><a href="cart.html">Shopping Cart</a></li>
+                                                            <li><a href="checkout.html">Checkout</a></li>
+                                                            <li><a href="contact.html">Login</a></li>
+                                                            <li><a href="contact.html">Register</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="shop.html">Phone & Tablets</a>
+                                                        <ul class="mega-item">
+                                                            <li><a href="shop.html">Catagory 1</a></li>
+                                                            <li><a href="shop.html">Catagory 2</a></li>
+                                                            <li><a href="shop.html">Catagory 3</a></li>
+                                                            <li><a href="shop.html">Catagory 4</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="shop.html">Phone & Tablets</a>
+                                                        <ul class="mega-item">
+                                                            <li><a href="shop.html">Catagory 1</a></li>
+                                                            <li><a href="shop.html">Catagory 2</a></li>
+                                                            <li><a href="shop.html">Catagory 3</a></li>
+                                                            <li><a href="shop.html">Catagory 4</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-dropdown">
                                                 <a href="shop.html">
                                                     <i class="fal fa-alarm-clock"></i>
                                                     Rugby
@@ -337,8 +384,8 @@
                 <div class="offcanvas__wrapper">
                     <div class="offcanvas__top d-flex align-items-center mb-60 justify-content-between">
                         <div class="logo">
-                            <a href="/">
-                                <img th:src="@{/img/logo/logo.png}" alt="logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/logo.png" alt="logo">
                             </a>
                         </div>
                         <div class="offcanvas__close">
@@ -450,406 +497,97 @@
 <!-- sidebar area end -->
 
 <main>
-    <!-- slider area start -->
-    <section class="slider__area">
-        <div class="slider__active swiper-container">
-            <div class="swiper-wrapper">
-                <div class="slider__item slider__height swiper-slide d-flex align-items-center include-bg"
-                     th:data-background="@{/img/slider/slider-bg-1.jpg}">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xxl-10">
-                                <div class="slider__content p-relative z-index-11">
-                                    <span data-animation="fadeInUp" data-delay=".3s">индивидуальные решения для вашего дома</span>
-                                    <h3 class="slider__title" data-animation="fadeInUp" data-delay=".5s">Изготовление
-                                        корпусной мебели на заказ</h3>
-                                    <div class="slider__btn" data-animation="fadeInUp" data-delay=".4s">
-                                        <a class="b-btn-3 open-popup">Заказать мебель <i
-                                                class="fal fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider__item slider__height swiper-slide d-flex align-items-center include-bg"
-                     th:data-background="@{/img/slider/slider-bg-2.jpg}">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xxl-7">
-                                <div class="slider__content p-relative z-index-11">
-                                    <span data-animation="fadeInUp"
-                                          data-delay=".3s">создаем уникальный интерьер вместе</span>
-                                    <h3 class="slider__title" data-animation="fadeInUp" data-delay=".5s">Мебель на заказ
-                                        по дизайн-проекту</h3>
-                                    <div class="slider__btn" data-animation="fadeInUp" data-delay=".4s">
-                                        <a class="b-btn-3 open-popup">Отправить на расчёт <i
-                                                class="fal fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-slider-pagination">
-                <button class="main-slider-button-prev"><i class="fal fa-angle-left"></i></button>
-                <button class="main-slider-button-next"><i class="fal fa-angle-right"></i></button>
-            </div>
-        </div>
-    </section>
-    <!-- slider area end -->
 
-    <!-- about__history-start -->
-    <a name="about"></a>
-    <section class="bg-black about__history pt-30 pb-30">
-        <a name="about"></a>
+    <!-- contact-area start -->
+    <section class="bg-black contact-area pt-120 pb-50 fix">
         <div class="container">
-            <span class="about__history-title-pre">О нас</span>
-            <div class="row justify-content-center">
-                <div class="col-xxl-8 col-xl-10">
-                    <div class="about__history-wrapper">
-                        <div class="about__history-title-area">
-                            <h3 class="about__history-title">
-                                <span>Привет, мы - Siture</span> <br>
-                                Создаем мебель, которая подходит именно вам
-                            </h3>
-                        </div>
-                        <p class="about__history-text">Наша компания специализируется на изготовлении корпусной мебели
-                            на заказ по индивидуальным размерам. Мы предлагаем нашим клиентам качественную и уникальную
-                            мебель, которая идеально вписывается в любой интерьер.</p>
-
-                        <p>Если вы хотите приобрести качественную мебель на заказ, которая будет соответствовать всем
-                            вашим пожеланиям и требованиям, то обращайтесь к нам. Мы создадим для вас уникальную и
-                            функциональную мебель, которая украсит ваш дом и прослужит многие годы.</p>
+            <div class="row">
+                <div class="col-xxl-5 col-xl-6 col-lg-6">
+                    <div class="sec-wrapper">
+                        <h5>Свяжитесь с нами</h5>
+                        <h2 class="absection-title">Наши эксперты помогут вам с выбором мебели</h2>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about__history-end -->
-
-    <!-- about__offer start -->
-    <section class="about__offer pt-155 pb-130 include-bg" th:data-background="@{/img/bg/about-bg-1.webp}">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xxl-8 col-xl-8 col-lg-10">
-                    <div class="about__offer-content text-center">
-                        <div class="about__offer-icon mb-20">
-                            <i class="text-white fal fa-regular fa-drafting-compass fa-7x"></i>
-                        </div>
-                        <h3>Уже есть готовый дизайн проект?</h3>
-                        <p>Хотите узнать, сколько будет стоить создание идеальной мебели для вашего интерьера? Если у
-                            вас уже есть готовый дизайн проект, то вы можете отправить его нам и мы рассчитаем стоимость
-                            каждого изделия. Сделайте первый шаг к созданию своей идеальной мебели и отправьте дизайн
-                            проект нашим специалистам прямо сейчас!</p>
-                        <a class="b-btn-3 mt-30">Отправить на расчёт <i class="fal fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about__offer end -->
-
-    <!-- about__gallery-start -->
-    <a name="projects"></a>
-    <section class="bg-black about__gallery pt-30 pb-30">
-        <div class="container">
-            <span class="about__history-title-pre">Наши проекты</span>
-            <div class="row gx-2">
-                <div class="col-xxl-8 col-xl-8 col-lg-8">
-                    <div class="about__gallery-wrapper">
-                        <div class="project d-flex align-items-center min-height-my about__gallery-review include-bg mb-8"
-                             th:data-background="@{/img/projects/kitchens.webp}">
-                            <a href="/projects/kitchens/1"></a>
-                            <h3>Кухни</h3>
-                        </div>
-                        <div class="row gx-2">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                <div class="about__gallery-thumb w-img mb-10">
-                                    <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8"
-                                         th:data-background="@{/img/projects/wardboards.webp}">
-                                        <h3>Шкафы</h3>
-                                    </div>
-                                </div>
+                    <div class="contact-info mr-50 mr-xs-0  mr-md-0 mb-30">
+                        <div class="single-contact-info d-flex align-items-center">
+                            <div class="contact-info-icon">
+                                <a href="#"><i class="fal fa-phone-alt"></i></a>
                             </div>
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                <div class="about__gallery-thumb w-img mb-10">
-                                    <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8"
-                                         th:data-background="@{/img/projects/dressrooms.webp}">
-                                        <h3>Гардеробные</h3>
-                                    </div>
-                                </div>
+                            <div class="contact-info-text mt-10">
+                                <span>Позвонить</span>
+                                <h5><a href="tel:74952900101">+7(495)-290-01-01</a></h5>
+                            </div>
+                        </div>
+                        <div class="single-contact-info d-flex align-items-center">
+                            <div class="contact-info-icon">
+                                <a href="#"><i class="fal fa-envelope"></i></a>
+                            </div>
+                            <div class="contact-info-text mt-10">
+                                <span>отправить письмо</span>
+                                <h5><a href="mailto:mebel@siture.ru">mebel@siture.ru</a></h5>
+                            </div>
+                        </div>
+                        <div class="single-contact-info d-flex align-items-center">
+                            <div class="contact-info-icon">
+                                <a href="#"><i class="fal fa-map-marker-alt"></i></a>
+                            </div>
+                            <div class="contact-info-text mt-10">
+                                <span>Наш офис</span>
+                                <h5><a target="_blank"
+                                       href="https://www.google.com/maps/place/Peter+Cooper+Village/@40.7348141,-73.9790254,17z/data=!4m13!1m7!3m6!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2sNew+York,+NY,+USA!3b1!8m2!3d40.7127753!4d-74.0059728!3m4!1s0x89c259e57464e6fb:0x537c7117719c8f74!8m2!3d40.7353483!4d-73.9772081">Москва,
+                                    Духовской переулок, 17</a></h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4">
-                    <div class="about__gallery-thumb mb-8 w-img">
-                        <div class="project d-flex align-items-center min-height-my-wardboard about__gallery-review include-bg mb-8"
-                             th:data-background="@{/img/projects/consoles.webp}">
-                            <h3>Консоли</h3>
-                        </div>
-                    </div>
-                    <div class="about__gallery-thumb mb-8 w-img">
-                        <div class="project d-flex align-items-center min-height-my-wallpanels about__gallery-review include-bg mb-8"
-                             th:data-background="@{/img/projects/wallpanels.webp}">
-                            <h3>Стеновые панели</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about__gallery-end -->
-
-
-    <!-- features__area start -->
-    <a name="advantages"></a>
-    <section class="bg-black features-2__area pb-85 pt-85">
-        <div class="container">
-            <span class="about__history-title-pre">Почему выбирают нас?</span>
-            <div class="row gx-0">
-                <div class="col-xxl-4 offset-xxl-2 col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6">
-                    <div class="features-2__item-2 features-2__item-pb-40 features-2__item-br features-2__item-bb text-center">
-                        <div class="features-2__icon-2">
-                            <i class="fal text-white fa-regular fa-handshake fa-7x"></i>
-                        </div>
-                        <div class="features-2__content-2">
-                            <h3 class="features-2__title-2">Уникальные решения</h3>
-                            <p>Индивидуальный подход к каждому клиенту - разрабатываем мебель на заказ, учитывая личные
-                                пожелания клиента.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-6">
-                    <div class="features-2__item-2 features-2__item-pb-40 features-2__item-bb text-center">
-                        <div class="features-2__icon-2">
-                            <i class="text-white fal fa-solid fa-cubes fa-7x"></i>
-                        </div>
-                        <div class="features-2__content-2">
-                            <h3 class="features-2__title-2">Высокое качество материалов</h3>
-                            <p>Мы используем только качественные и проверенные материалы и фурнитуру от ведущих
-                                производителей.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 offset-xxl-2  col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6">
-                    <div class="features-2__item-2 features-2__item-pt-65 features-2__item-br text-center">
-                        <div class="features-2__icon-2">
-                            <i class="text-white fal fa-solid fa-users fa-7x"></i>
-                        </div>
-                        <div class="features-2__content-2">
-                            <h3 class="features-2__title-2">Опытные специалисты</h3>
-                            <p>В нашей компании работают опытные специалисты, которые знают все нюансы изготовления
-                                качественной корпусной мебели. Они обладают высоким уровнем профессионализма и всегда
-                                готовы поделиться своими знаниями и опытом с нашими клиентами.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-5  col-lg-5  col-md-6">
-                    <div class="features-2__item-2 features-2__item-pt-65 text-center">
-                        <div class="features-2__icon-2">
-                            <i class="text-white fal fa-solid fa-vote-yea fa-7x"></i>
-                        </div>
-                        <div class="features-2__content-2">
-                            <h3 class="features-2__title-2">Гарантия на изделия - 2 года!</h3>
-                            <p>Мы гарантируем высокое качество нашей продукции. Вся мебель проходит тщательную проверку
-                                перед тем, как попасть к клиенту. Мы несем ответственность за каждую деталь и
-                                гарантируем ее качество.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- features__area end -->
-
-    <!-- shop modal start -->
-    <div class="modal fade" id="productModalId" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered product__modal" role="document">
-            <div class="modal-content">
-                <div class="product__modal-wrapper p-relative">
-                    <div class="product__modal-close p-absolute">
-                        <button data-bs-dismiss="modal"><i class="fal fa-times"></i></button>
-                    </div>
-                    <div class="product__modal-inner">
+                <div class="col-xxl-7 col-xl-6 col-lg-6">
+                    <form id="contacts-form" class="conatct-post-form mb-30" action="#">
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="product__modal-box">
-                                    <div class="tab-content" id="modalTabContent">
-                                        <div class="tab-pane fade show active" id="nav1" role="tabpanel"
-                                             aria-labelledby="nav1-tab">
-                                            <div class="product__modal-img w-img">
-                                                <img src="assets/img/products/quick-view/quick-view-1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="nav2" role="tabpanel" aria-labelledby="nav2-tab">
-                                            <div class="product__modal-img w-img">
-                                                <img src="assets/img/products/quick-view/quick-view-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="nav3" role="tabpanel" aria-labelledby="nav3-tab">
-                                            <div class="product__modal-img w-img">
-                                                <img src="assets/img/products/quick-view/quick-view-3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="nav4" role="tabpanel" aria-labelledby="nav4-tab">
-                                            <div class="product__modal-img w-img">
-                                                <img src="assets/img/products/quick-view/quick-view-4.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <ul class="nav nav-tabs" id="modalTab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="nav1-tab" data-bs-toggle="tab"
-                                                    data-bs-target="#nav1" type="button" role="tab" aria-controls="nav1"
-                                                    aria-selected="true">
-                                                <img src="assets/img/products/quick-view/nav/quick-nav-1.jpg" alt="">
-                                            </button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="nav2-tab" data-bs-toggle="tab"
-                                                    data-bs-target="#nav2" type="button" role="tab" aria-controls="nav2"
-                                                    aria-selected="false">
-                                                <img src="assets/img/products/quick-view/nav/quick-nav-2.jpg" alt="">
-                                            </button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="nav3-tab" data-bs-toggle="tab"
-                                                    data-bs-target="#nav3" type="button" role="tab" aria-controls="nav3"
-                                                    aria-selected="false">
-                                                <img src="assets/img/products/quick-view/nav/quick-nav-3.jpg" alt="">
-                                            </button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="nav4-tab" data-bs-toggle="tab"
-                                                    data-bs-target="#nav4" type="button" role="tab" aria-controls="nav4"
-                                                    aria-selected="false">
-                                                <img src="assets/img/products/quick-view/nav/quick-nav-4.jpg" alt="">
-                                            </button>
-                                        </li>
-                                    </ul>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="contact-icon p-relative contacts-name">
+                                    <input type="text" placeholder="Имя">
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="product__modal-content">
-                                    <h4 class="product__modal-title"><a href="product-details.html">Samsung C49J89:
-                                        £875, Debenhams Plus</a></h4>
-                                    <div class="product__modal-des mb-40">
-                                        <p>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum
-                                            claritatem. Investigationes demonstraverunt </p>
-                                    </div>
-                                    <div class="product__modal-stock">
-                                        <span>Availability :</span>
-                                        <span>In Stock</span>
-                                    </div>
-                                    <div class="product__modal-stock sku mb-30">
-                                        <span>SKU:</span>
-                                        <span>Samsung C49J89: £875, Debenhams Plus</span>
-                                    </div>
-                                    <div class="product__modal-review d-sm-flex">
-                                        <div class="rating mb-15 mr-35">
-                                            <ul>
-                                                <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product__modal-add-review mb-15">
-                                            <span><a href="#">1 Review</a></span>
-                                            <span><a href="#">Add Review</a></span>
-                                        </div>
-                                    </div>
-                                    <div class="product__modal-price">
-                                        <span>$560.00</span>
-                                    </div>
-                                    <div class="product__modal-form mb-30">
-                                        <form action="#">
-                                            <div class="pro-quan-area d-lg-flex align-items-center">
-                                                <div class="product-quantity mr-20 mb-25">
-                                                    <div class="cart-plus-minus p-relative"><input type="text"
-                                                                                                   value="1"/></div>
-                                                </div>
-                                                <div class="pro-cart-btn mb-25">
-                                                    <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="product__modal-links">
-                                        <ul>
-                                            <li><a href="#" title="Add to Wishlist"><i class="fal fa-heart"></i></a>
-                                            </li>
-                                            <li><a href="#" title="Compare"><i class="far fa-sliders-h"></i></a></li>
-                                            <li><a href="#" title="Print"><i class="fal fa-print"></i></a></li>
-                                            <li><a href="#" title="Print"><i class="fal fa-share-alt"></i></a></li>
-                                        </ul>
-                                    </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="contact-icon p-relative contacts-name">
+                                    <input type="email" placeholder="Email">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- shop modal end -->
-
-    <!-- modal start -->
-    <div class="popup-bg">
-        <div class="popup">
-            <i class="text-black fal fa-regular fa-circle-xmark close-popup fa-2x"></i>
-            <!-- checkout-area start -->
-            <section class="bg-white checkout-area pb-30 pr-30 pl-30 pt-30">
-                <div class="checkbox-form">
-                    <form class="form-popup" action="/" method="post">
-                        <h3>Оставьте заявку и мы свяжемся с вами</h3>
-                        <div class="row">
-                            <div class="checkout-form-list">
-                                <label>Ваше имя <span class="required">*</span></label>
-                                <input type="text" name="name" id="name" placeholder="Имя">
-                            </div>
-                            <div class="checkout-form-list">
-                                <label>Номер телефона <span class="required">*</span></label>
-                                <input type="text" name="phone" id="phone" placeholder="+7(999)999-99-99">
-                            </div>
-                            <div class="order-notes">
-                                <div class="checkout-form-list">
-                                    <label>Вы можете оставить сообщение</label>
-                                    <textarea name="message" id="message" cols="30" rows="10"
-                                              placeholder="Какой у вас вопрос?"></textarea>
+                            <div class="col-xl-12">
+                                <div class="contact-icon p-relative contacts-Phone">
+                                    <input type="text" placeholder="Телефон">
                                 </div>
                             </div>
-                            <div class="checkout-form-list create-acc">
-                                <input name="checkbox" id="checkbox" type="checkbox">
-                                <label>Я согласен с политикой конфиденциальности <span class="required">*</span></label>
+                            <div class="col-xl-12">
+                                <div class="contact-icon p-relative contacts-message">
+                                    <textarea name="comments" id="comments" cols="30" rows="10"
+                                              placeholder="Ваше сообщение"></textarea>
+                                </div>
                             </div>
-                            <input type="button" class="b-btn-3 send-mail" value="Отправить"/>
+                            <div class="col-xl-12">
+                                <div class="post-check">
+                                    <input type="checkbox">
+                                    <span>Я согласен с политикой конфиденциальности</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="contact- mt-15">
+                                    <button class="b-btn-3 mt-15" type="submit">Отправить</button>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
-                <div class="text-danger err-message"></div>
-            </section>
-            <!-- checkout-area end -->
+            </div>
         </div>
-    </div>
-    <!-- modal end -->
+    </section>
+    <!-- contact-area end -->
 
-    <!-- modal start -->
-    <div class="popup-success">
-        <div class="popup">
-            <i  class="text-black fal fa-regular fa-circle-xmark close-popup close-popup-success fa-2x"></i>
-            <!-- checkout-area start -->
-            <section class="bg-white checkout-area pb-30 pr-30 pl-30 pt-30">
-                <h3 class="text-black text-center">Заявка успешно отправлена!</h3>
-            </section>
-            <!-- checkout-area end -->
-        </div>
-    </div>
-    <!-- modal end -->
+    <!-- map-area start -->
+    <section class="map-area">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A97c5dcd12be04aace13b6477664de11794b18c2c2ae14b35cc4b209a16394c4e&amp;source=constructor"
+                width="100%" height="555" frameborder="0"></iframe>
+    </section>
+    <!-- map-area end -->
 </main>
 
 <!-- footer area start -->
@@ -862,7 +600,7 @@
                         <div class="footer__widget footer__widget-border footer-col-1 pb-30">
                             <div class="footer__info">
                                 <div class="logo footer__logo mb-55">
-                                    <a href="/">
+                                    <a href="index222.html">
                                         <img th:src="@{/img/logo/logo-white.png}" alt="">
                                     </a>
                                 </div>
@@ -1061,5 +799,7 @@
 <script src="" th:src="@{/js/formMail.js}"></script>
 <!-- Main JS -->
 <script src="" th:src="@{/js/main.js}"></script>
+</body>
+</html>
 </body>
 </html>

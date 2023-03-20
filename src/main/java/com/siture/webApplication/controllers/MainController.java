@@ -63,6 +63,12 @@ public class MainController {
         return "kitchen-details";
     }
 
+    @GetMapping("/contacts")
+    public String contacts() {
+//        model.addAttribute("user", userService.getUserByPrincipal(principal));
+        return "contacts";
+    }
+
     @GetMapping("/index_5")
     public String index5(Model model) {
         return "index-5";

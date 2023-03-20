@@ -3089,6 +3089,10 @@ product__title-link {
     color: #db3340;
 }
 
+.product__price {
+    margin-bottom: 12px;
+}
+
 .product__price .price {
     font-size: 20px;
     color: #b9a16b;
@@ -3709,8 +3713,15 @@ product__title-link {
 }
 
 .product__modal-nav .nav .nav-item {
-    width: 120px;
+    width: 80px;
+    margin-bottom: 5px;
     opacity: 0.5;
+}
+
+@media (max-width: 575px) {
+    .product__modal-nav .nav .nav-item {
+        width: 60px;
+    }
 }
 
 .product__modal-nav .nav .nav-item.active {
@@ -3725,7 +3736,7 @@ product__title-link {
 
 @media (max-width: 575px) {
     .product__modal-content-2 {
-        margin-top: 40px;
+        margin-top: 12px;
     }
 }
 
@@ -3733,6 +3744,20 @@ product__title-link {
     font-size: 35px;
     margin-bottom: 17px;
     color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+    .product__modal-content-2 h4 {
+        font-size: 30px;
+        margin-bottom: 8px;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 575px) {
+    .product__modal-content-2 h4 {
+        font-size: 25px;
+    }
 }
 
 .product__modal-content-2 h4 a:hover {
@@ -3823,6 +3848,12 @@ product__title-link {
     margin-right: 7px;
 }
 
+@media (max-width: 1199px) {
+    .product__modal-content-2 .product__price span {
+        font-size: 20px;
+    }
+}
+
 .product__modal-content-2 .product__price span.old-price {
     color: #8c8c8c;
     text-decoration: line-through;
@@ -3833,6 +3864,21 @@ product__title-link {
     padding-bottom: 25px;
     border-top: 1px solid #e3e3e3;
     border-bottom: 1px solid #e3e3e3;
+}
+
+@media (max-width: 1199px) {
+    .product__modal-content-2 .product__modal-des {
+        padding-top: 11px;
+        padding-bottom: 0px;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+    }
+}
+
+@media (max-width: 1199px) {
+    .product__modal-content-2 .product__modal-des h3 {
+        font-size: 20px;
+    }
 }
 
 .product__modal-content-2 .product__modal-des p {
@@ -3846,6 +3892,12 @@ product__title-link {
 .product__modal-content-2 .product__modal-des li {
     color: #ffffff;
     font-size: 16px;
+}
+
+@media (max-width: 1199px) {
+    .product__modal-content-2 .product__modal-des li {
+        font-size: 15px;
+    }
 }
 
 .product__modal-content-2 .product__modal__tag span {
@@ -4102,16 +4154,15 @@ product__title-link {
 
 @media (max-width: 575px) {
     .product__details-tab-nav .nav-tabs .nav-link {
-        padding: 0px;
+        padding: 6px;
         text-align: left;
-        margin-bottom: 10px;
         margin-right: 10px;
     }
 }
 
 .product__details-des p {
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #222;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 15px;
@@ -4119,6 +4170,12 @@ product__title-link {
     border-radius: 8px;
     font-size: 16px;
     margin-bottom: 28px;
+}
+
+@media (max-width: 1199px) {
+    .product__details-des p {
+        font-size: 15px;
+    }
 }
 
 .product__details-des-list ul li {
@@ -6179,7 +6236,7 @@ product__title-link {
 }
 
 .sec-wrapper h5 {
-    color: #ff8429;
+    color: #b9a16b;
     letter-spacing: 1px;
     font-size: 19px;
     font-weight: 400;
@@ -6199,7 +6256,7 @@ product__title-link {
 }
 
 .single-contact-info:hover .contact-info-icon a {
-    background-color: #ff8429;
+    background-color: #b9a16b;
     color: #ffffff;
 }
 
@@ -6220,7 +6277,7 @@ product__title-link {
     text-align: center;
     border-radius: 50%;
     font-size: 20px;
-    color: #ff8429;
+    color: #b9a16b;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
@@ -8711,6 +8768,17 @@ p.checkout-coupon input[type=text]::placeholder {
     z-index: 9999;
 }
 
+.popup-success {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 9999;
+}
+
 .popup {
     position: absolute;
     background: #ffffff;
@@ -8740,6 +8808,11 @@ p.checkout-coupon input[type=text]::placeholder {
     text-align: end;
 }
 
+.close-popup-success {
+    display: block;
+    text-align: end;
+}
+
 .no-scroll {
     overflow-y: hidden;
 }
@@ -8749,5 +8822,29 @@ p.checkout-coupon input[type=text]::placeholder {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .pro-quan-area-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .pro-quan-area-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .pro-quan-area-desktop {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .pro-quan-area-mobile {
+        display: none;
+    }
 }
 /*# sourceMappingURL=style.css.map */

@@ -736,17 +736,17 @@
 
 	$('.open-popup').click(function(e) {
 		e.preventDefault();
-		$('#popupBg').fadeIn(800);
+		$('.popup-bg').fadeIn(800);
 		$('html').addClass('no-scroll');
 	});
 
-	$('#closePopup').click(function() {
-		$('#popupBg').fadeOut(800);
+	$('.close-popup').click(function() {
+		$('.popup-bg').fadeOut(800);
 		$('html').removeClass('no-scroll');
 	});
 
-	$('#closePopupSuccess').click(function() {
-		$('#popupSuccess').fadeOut(800);
+	$('.close-popup-success').click(function() {
+		$('.popup-success').fadeOut(800);
 		$('html').removeClass('no-scroll');
 	});
 
