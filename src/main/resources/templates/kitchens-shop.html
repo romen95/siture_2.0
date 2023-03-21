@@ -20,15 +20,14 @@
     <link rel="stylesheet" href="" th:href="@{/css/font-awesome-pro.css}"/>
     <link rel="stylesheet" href="" th:href="@{/flaticon/flaticon.css}"/>
     <link rel="stylesheet" href="" th:href="@{/css/default.css}"/>
-    <link rel="stylesheet" href="" th:href="@{/css/ui-range-slider.css}"/>
     <link rel="stylesheet" href="" th:href="@{/css/style.css}"/>
 </head>
+
 <body>
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience and security.</p>
 <![endif]-->
-
 
 <!-- prealoder area start -->
 <div id="loading">
@@ -72,27 +71,27 @@
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li class="has-dropdown">
-                                            <a href="index222.html">Главная</a>
+                                            <a href="/">Главная</a>
                                             <ul class="submenu">
                                                 <li>
-                                                    <a href="index222.html">О нас</a>
+                                                    <a href="#about">О нас</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index-2.html">Home Style 2</a>
+                                                    <a href="#projects">Проекты</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index-3.html">Home Style 3</a>
+                                                    <a href="#advantages">Преимущества</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="shop.html">Как мы работаем?</a>
+                                            <a href="#">Как мы работаем?</a>
                                         </li>
                                         <li>
-                                            <a href="blog.html">Дизайнерам</a>
+                                            <a href="#">Дизайнерам</a>
                                         </li>
                                         <li>
-                                            <a href="about.html">Контакты</a>
+                                            <a href="/contacts">Контакты</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -107,7 +106,7 @@
                 <div class="row align-items-center">
                     <div class="col-xxl-2 col-xl-2 col-lg-3 col-6">
                         <div class="logo">
-                            <a href="index222.html">
+                            <a href="/">
                                 <img th:src="@{/img/logo/logo.png}" alt="">
                             </a>
                         </div>
@@ -119,59 +118,12 @@
                                 <div class="side-submenu transition-3">
                                     <nav>
                                         <ul>
-                                            <li class="has-dropdown">
-                                                <a href="shop.html">
+                                            <li>
+                                                <a href="/projects/kitchens/1">
                                                     <i class="fal fa-headphones"></i>
-                                                    All
+                                                    Кухни
                                                 </a>
-                                                <ul class="mega-menu" data-background="assets/img/bg/mega-bg.jpg">
-                                                    <li><a href="shop.html">Shop Pages</a>
-                                                        <ul class="mega-item">
-                                                            <li><a href="shop.html">Standard SHop Page</a></li>
-                                                            <li><a href="shop.html">Shop Right Sidebar</a></li>
-                                                            <li><a href="shop.html">Shop Left Sidebar</a></li>
-                                                            <li><a href="shop.html">Shop 3 Column</a></li>
-                                                            <li><a href="shop.html">Shop 4 Column</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="shop.html">Product Pages</a>
-                                                        <ul class="mega-item">
-                                                            <li><a href="product-details.html">Product Details</a></li>
-                                                            <li><a href="product-details.html">Product V2</a></li>
-                                                            <li><a href="product-details.html">Product V3</a></li>
-                                                            <li><a href="product-details.html">Varriable Product</a>
-                                                            </li>
-                                                            <li><a href="product-details.html">External Product</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="about.html">Other Pages</a>
-                                                        <ul class="mega-item">
-                                                            <li><a href="wishlist.html">wishlist</a></li>
-                                                            <li><a href="cart.html">Shopping Cart</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                            <li><a href="contact.html">Login</a></li>
-                                                            <li><a href="contact.html">Register</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="shop.html">Phone & Tablets</a>
-                                                        <ul class="mega-item">
-                                                            <li><a href="shop.html">Catagory 1</a></li>
-                                                            <li><a href="shop.html">Catagory 2</a></li>
-                                                            <li><a href="shop.html">Catagory 3</a></li>
-                                                            <li><a href="shop.html">Catagory 4</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="shop.html">Phone & Tablets</a>
-                                                        <ul class="mega-item">
-                                                            <li><a href="shop.html">Catagory 1</a></li>
-                                                            <li><a href="shop.html">Catagory 2</a></li>
-                                                            <li><a href="shop.html">Catagory 3</a></li>
-                                                            <li><a href="shop.html">Catagory 4</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-dropdown">
+                                            <li>
                                                 <a href="shop.html">
                                                     <i class="fal fa-alarm-clock"></i>
                                                     Rugby
@@ -794,7 +746,7 @@
                         <div class="footer__widget footer__widget-border footer-col-1 pb-30">
                             <div class="footer__info">
                                 <div class="logo footer__logo mb-55">
-                                    <a href="index222.html">
+                                    <a href="/">
                                         <img th:src="@{/img/logo/logo-white.png}" alt="">
                                     </a>
                                 </div>
@@ -989,6 +941,7 @@
 <script src="" th:src="@{/js/isotope-pkgd.js}"></script>
 <script src="" th:src="@{/js/imagesloaded-pkgd.js}"></script>
 <script src="" th:src="@{/js/ajax-form.js}"></script>
+<script src="" th:src="@{/js/swiper-bundle.js}"></script>
 <script src="" th:src="@{/js/formMail.js}"></script>
 <!-- Main JS -->
 <script src="" th:src="@{/js/main.js}"></script>
