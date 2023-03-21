@@ -1350,7 +1350,8 @@ input {
     top: 1px;
     font-size: 12px;
     color: #777777;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
 .header__top-menu ul li.has-dropdown:hover a::after {
@@ -1794,7 +1795,8 @@ input {
     top: 9px;
     font-size: 14px;
     color: #333;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
 .main-menu ul li a {
@@ -2014,7 +2016,7 @@ input {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 6 Free";
     font-size: 14px;
     color: #888888;
 }
@@ -4191,7 +4193,7 @@ product__title-link {
     top: 0;
     font-size: 14px;
     color: #606060;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 6 Free";
 }
 
 .product__details-des-list ul li span {
@@ -4328,7 +4330,7 @@ product__title-link {
     content: "\f105";
     right: 0;
     top: 0;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 6 Free";
     font-size: 16px;
 }
 
@@ -4758,7 +4760,7 @@ product__title-link {
     left: 5px;
     top: 50%;
     transform: translateY(-50%);
-    font-family: "Font awesome 5 pro";
+    font-family: "Font Awesome 6 Free";
     font-size: 12px;
     content: "\f00c";
     opacity: 0;
@@ -6830,7 +6832,7 @@ product__title-link {
     content: "\f105";
     right: 0;
     top: 0;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 6 Free";
     font-size: 16px;
 }
 
@@ -7336,7 +7338,7 @@ td.product-thumbnail img {
     top: 13px;
     position: absolute;
     color: #6f7172;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 6 Free";
     font-weight: 700;
 }
 
@@ -7728,7 +7730,7 @@ p.checkout-coupon input[type=text]::placeholder {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 6 Free";
     font-size: 16px;
     font-weight: 400;
     margin-left: 0;
@@ -8234,7 +8236,7 @@ p.checkout-coupon input[type=text]::placeholder {
     box-sizing: border-box;
     content: "\f00c";
     position: absolute;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 6 Free";
     font-size: 10px;
     color: #ffffff;
     top: 46%;

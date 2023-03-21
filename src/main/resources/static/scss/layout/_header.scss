@@ -1,4 +1,4 @@
-@use '../utils/index' as *;
+@use '../utils' as *;
 
 /*----------------------------------------*/
 /*  10. HEADER CSS START
@@ -82,6 +82,7 @@
                                 font-size: 12px;
                                 color: $text-3;
                                 font-family: $fontawesome;
+                                font-weight: 900;
                             }
                         }
                         &:hover{
@@ -375,7 +376,7 @@
         }
         &-2{
             & ul{
-                & li{
+                & li{                   
                     & a{
                         & .cart-count{
                             background-color: $theme-color-3;
@@ -492,6 +493,7 @@
                         font-size: 14px;
                         color: $black-2;
                         font-family: $fontawesome;
+                        font-weight: 900;
                     }
                 }
             }
@@ -669,6 +671,7 @@
                 & i{
                     font-size: 17px;
                     padding-right: 15px;
+                    font-weight: 900;
                 }
                 @media #{$xl}{
                     padding-left: 15px;
@@ -689,7 +692,7 @@
                     &::after{
                         position: absolute;
                         content: '\f0da';
-                        font-weight: 700;
+                        font-weight: 900;
                         right: 10px;
                         top: 50%;
                         @include transform(translateY(-50%));
@@ -718,7 +721,7 @@
                     opacity: 1;
                 }
             }
-
+    
             // mega menu
             & .mega-menu{
                 position: absolute;
@@ -803,8 +806,8 @@
                     }
                 }
             }
-
-            // submenu
+    
+            // submenu 
             & .submenu{
                 position: absolute;
                 top: 0;
@@ -854,7 +857,7 @@
                                 height: 100%;
                                 bottom: auto;
                                 top: 0;
-                            }
+                            } 
                         }
                         & > .submenu{
                             visibility: visible;
